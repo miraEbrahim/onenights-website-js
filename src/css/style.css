@@ -1,0 +1,60 @@
+body {
+  margin:0;
+  padding: 0;
+  color: aliceblue;
+}
+
+.cover-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover-container::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../img/london-thames.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+  filter: brightness(60%);
+}
+
+.cover-content{
+  position: relative;
+}
+
+
+/* centered elements verticlay and horizantly
+.cover-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  height: 1200px;
+  
+}
+
+.cover-items {
+  height: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+} */
+
+/* Grid 1 column and 3 rows
+.parent {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  } */
+
